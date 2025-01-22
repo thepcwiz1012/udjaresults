@@ -7,5 +7,5 @@ Disclaimer: This script is not endorsed by CSJ or any of his employees. This scr
 
 # Roadmap
 - [x] Improve logic (Completed)
-- [ ] Add all types and octagrams (Coming soon!)
+- [x] Add all types and octagrams (Completed)
 - [ ] Add option to open up CS Joseph's linktr.ee which has links to all his content. Please note for some reason his link tree fails to link to his youtube channel so i'll have to add a seperate question asking if you want to visit his youtube channel.
