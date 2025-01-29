@@ -1,9 +1,10 @@
 @echo off
 :start
 cls
-echo UDJA Results Generator 0.3 [PR]
+echo UDJA Results Generator 0.4 [PR]
 echo Octagram is as follows 1 for UDUF, 2 for UDSF, 3 for SDSF, 4 for SDUF. 
 echo Example: enfp1 for ENFP UDUF (Make sure your entry is all lower case!)
+echo To exit the script type "exit"
 set /p choice=Input Type and Octagram-
 if '%choice%'=='intp1' (start https://udja.app/types/intp-uduf) && (goto :start) 
 if '%choice%'=='intp2' (start https://udja.app/types/intp-udsf) && (goto :start)
@@ -67,7 +68,8 @@ if '%choice%'=='isfp3' (start https://udja.app/types/isfp-sdsf) && (goto :start)
 if '%choice%'=='isfp4' (start https://udja.app/types/isfp-sduf) && (goto :start) 
 if '%choice%'=='isfj1' (start https://udja.app/types/isfj-uduf) && (goto :start) 
 if '%choice%'=='isfj2' (start https://udja.app/types/isfj-udsf) && (goto :start) 
-if '%choice%'=='isfj3' (start https://udja.app/types/isfj-sdsf) && (goto :start) 
+if '%choice%'=='isfj3' (start https://udja.app/types/isfj-sdsf) && (goto :start)
+if '%choice%'=='exit' (exit)
 if '%choice%'=='isfj4' (start https://udja.app/types/isfj-sduf) && (goto :start) else (goto :invalid)
 
 
@@ -76,7 +78,3 @@ cls
 echo You have inputted an invalid entry please try again.
 timeout 5 /NOBREAK
 goto :start
-
-:exit
-cls
-exit
